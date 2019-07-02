@@ -1,0 +1,43 @@
+html {
+	font-family: sans-serif,Verdana;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.row::after {
+  display: table;
+  clear: both;
+  width: 100%;
+}
+.nav {
+  display: table-cell;
+  padding: 15px;
+  width: 10%;
+  border: 1px solid black;
+  background-color:#CCD1D1;
+}
+
+.nav ul {
+	list-style-type: none;
+}
+
+hr.black {
+  border: 0.5px solid black
+}
+
+.content {
+  display: table-cell;
+  padding: 15px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.content ul{
+	list-style-type: square;
+}
+
+.content li{
+	padding: 5px;
+}
