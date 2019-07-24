@@ -50,4 +50,12 @@ div.main {
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
+div.main ul{
+	list-style: square;
+}
+
+div.main li{
+	padding-bottom: 8px;
+}
 /* END FORMATTING THE DIV'S*/
