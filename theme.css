@@ -10,6 +10,16 @@ hr.black {
 	border: 0.5px solid black
 }
 
+img.bio {
+	max-width:55%;
+	max-height:55%;
+	padding-top:10px;
+}
+
+table.bio{
+	border: 1px dotted black;
+}
+
 /* FORMATTING THE DIV'S*/
 div.container {
 	display: table;
