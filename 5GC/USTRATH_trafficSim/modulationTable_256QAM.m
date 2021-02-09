@@ -1,0 +1,55 @@
+function [SINRTarget, bitsSymbol] = modulationTable_256QAM(maxSINR)
+% matches max SINR to best fit in modulation table
+
+if maxSINR >= 10^(-6/10) && maxSINR < 10^(-5/10),
+    SINRTarget = -6;
+    bitsSymbol = 0.1523;
+elseif maxSINR >= 10^(-5/10) && maxSINR < 10^(-3/10),
+    SINRTarget = -5;
+    bitsSymbol = 0.2344;
+elseif maxSINR >= 10^(-3/10) && maxSINR < 10^(-1/10),
+    SINRTarget = -3;
+    bitsSymbol = 0.377;
+elseif maxSINR >= 10^(-1/10) && maxSINR < 10^(1/10),
+    SINRTarget = -1;
+    bitsSymbol = 0.6016;
+elseif maxSINR >= 10^(1/10) && maxSINR < 10^(3/10),
+    SINRTarget = 1;
+    bitsSymbol = 0.877;
+elseif maxSINR >= 10^(3/10) && maxSINR < 10^(5/10),
+    SINRTarget = 3;
+    bitsSymbol = 1.1758;
+elseif maxSINR >= 10^(5/10) && maxSINR < 10^(8/10),
+    SINRTarget = 5;
+    bitsSymbol = 1.4766;
+elseif maxSINR >= 10^(8/10) && maxSINR < 10^(9/10),
+    SINRTarget = 8;
+    bitsSymbol = 1.9141;
+elseif maxSINR >= 10^(9/10) && maxSINR < 10^(11/10),
+    SINRTarget = 9;
+    bitsSymbol = 2.4063;
+elseif maxSINR >= 10^(11/10) && maxSINR < 10^(12/10),
+    SINRTarget = 11;
+    bitsSymbol = 2.7305;
+elseif maxSINR >= 10^(12/10) && maxSINR < 10^(14/10),
+    SINRTarget = 12;
+    bitsSymbol = 3.3223;
+elseif maxSINR >= 10^(14/10) && maxSINR < 10^(16/10),
+    SINRTarget = 14;
+    bitsSymbol = 3.9023;
+elseif maxSINR >= 10^(16/10) && maxSINR < 10^(18/10),
+    SINRTarget = 16;
+    bitsSymbol = 4.5234;
+elseif maxSINR >= 10^(18/10) && maxSINR < 10^(20/10),
+    SINRTarget = 18;
+    bitsSymbol = 5.1152;
+elseif maxSINR >= 10^(20/10) && maxSINR < 10^(27/10),
+    SINRTarget = 20;
+    bitsSymbol = 5.5547;
+elseif maxSINR >= 10^(27/10),
+    SINRTarget = 27;
+    bitsSymbol = 6.4;
+else
+    SINRTarget = -Inf;
+    bitsSymbol = 0;
+end
