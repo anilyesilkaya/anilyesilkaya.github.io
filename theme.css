@@ -157,7 +157,7 @@ th, td{
 
 /* --- Dark-mode toggle (CSS-only) -------------------------------------- */
 .theme-note{
-  float:right; font-size:.9rem; color:var(--muted);
+  font-size:.7rem; color:var(--muted);
 }
 
 /* --- Print ------------------------------------------------------------- */
