@@ -110,14 +110,18 @@ a:hover{ text-decoration-thickness: 2px; }
 
 /* --- Lists of pubs/links ---------------------------------------------- */
 .list-plain{
-  padding: 0.75rem;
-  margin: 0;
+  margin: 1rem;
 }
 .list-plain li{
   padding: .35rem 0.35rem;
   border-bottom: 1px dotted var(--border);
 }
 .list-plain li:last-child{ border-bottom: 0; }
+
+.list-publications ol{
+  padding: .35rem 0.35rem;
+  border-bottom: 1px dotted var(--border);
+};
 
 /* --- Code/Pre ---------------------------------------------------------- */
 code, pre{
