@@ -113,15 +113,20 @@ a:hover{ text-decoration-thickness: 2px; }
   margin: 1rem;
 }
 .list-plain li{
-  padding: .35rem 0.35rem;
+  padding: 0.35rem 0.35rem;
   border-bottom: 1px dotted var(--border);
 }
 .list-plain li:last-child{ border-bottom: 0; }
 
-.list-publications ol{
+.list-publications{
+  margin: 1rem;
+}
+.list-publications li{
   padding: .35rem 0.35rem;
   border-bottom: 1px dotted var(--border);
-};
+}
+
+.list-publications li:last-child{ border-bottom: 0; }
 
 /* --- Code/Pre ---------------------------------------------------------- */
 code, pre{
