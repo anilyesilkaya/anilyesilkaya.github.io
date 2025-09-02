@@ -44,7 +44,7 @@ body{
   color:var(--fg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   line-height: 1.6;
 }
 
