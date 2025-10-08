@@ -15,7 +15,7 @@
   --code-bg: #f5f5f5;
   --code-border: #e5e5e5;
 
-  --maxw: 48rem;          /* ~768px */
+  --maxw: clamp(42rem, 80vw, 72rem);
   --rhythm: 1.1rem;       /* vertical rhythm */
   --radius: 6px;
 }
